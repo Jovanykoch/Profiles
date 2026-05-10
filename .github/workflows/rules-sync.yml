@@ -1,0 +1,48 @@
+name: Rules Auto Sync & Lint
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天凌晨2点(UTC)自动运行，可按需调整频率
+  workflow_dispatch:      # 可手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 拉取仓库全部内容
+      - uses: actions/checkout@v4
+
+      # 2. 设置 Python 环境（用于辅助自动化脚本，如有需要）
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 3. 同步规则文件（以 Surge Outbound.conf 为例，可扩展多源）
+      - name: Download latest Surge Outbound.conf
+        run: |
+          mkdir -p Surge
+          curl -sSfL -o Surge/Outbound.conf \
+            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Outbound.conf
+
+      - name: Download latest Surge Inbound.conf
+        run: |
+          mkdir -p Surge
+          curl -sSfL -o Surge/Inbound.conf \
+            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Inbound.conf
+
+      # 可扩展同步 Quantumult、Ruleset、Module 目录等多个目标
+
+      # 4. 可选：格式校验（规则 lint、空行、重复检测，可用 Python/Shell 脚本）
+      # - name: Lint rules (optional)
+      #   run: bash scripts/rules-lint.sh
+
+      # 5. 比对变更并直接推送或PR
+      - name: Commit & Push if Updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          timestamp=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')
+          git add Surge/Outbound.conf Surge/Inbound.conf
+          git diff --cached --quiet || git commit -m "auto: sync rules from upstream at $timestamp"
+          git push
