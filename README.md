@@ -16,18 +16,18 @@ This repository contains production-ready proxy rule configurations and resource
 
 1. Open Surge on your iOS device, go to "Profiles."
 2. Add a subscription with the following URLs:
-    - Outbound profile (global to overseas):  
+- Outbound profile (global to overseas):  
       `https://raw.githubusercontent.com/Jovanykoch/Profiles/main/Surge/Outbound.conf`
-    - Inbound profile (overseas to China):  
+- Inbound profile (overseas to China):  
       `https://raw.githubusercontent.com/Jovanykoch/Profiles/main/Surge/Inbound.conf`
 
 ### For Quantumult X
 
 1. Open Quantumult X and go to "Settings" > "Profiles."
 2. Add a subscription with the following URLs:
-    - Outbound profile:  
+ - Outbound profile:  
       `https://raw.githubusercontent.com/Jovanykoch/Profiles/main/Quantumult/Outbound.conf`
-    - Inbound profile:  
+ - Inbound profile:  
       `https://raw.githubusercontent.com/Jovanykoch/Profiles/main/Quantumult/Inbound.conf`
 
 ## Directory Structure
