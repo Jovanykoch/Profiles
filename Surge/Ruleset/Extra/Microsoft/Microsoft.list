@@ -1,0 +1,141 @@
+# Microsoft Services
+
+DOMAIN-SUFFIX,aadrm.com
+DOMAIN-SUFFIX,acompli.com
+DOMAIN-SUFFIX,acompli.net
+DOMAIN-SUFFIX,aka.ms
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,aspnetcdn.com
+DOMAIN-SUFFIX,assets-yammer.com
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azure.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azureiotcentral.com
+DOMAIN-SUFFIX,azurerms.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,cloudapp.net
+DOMAIN-SUFFIX,cloudappsecurity.com
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,gfx.ms
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,lync.com
+DOMAIN-SUFFIX,msappproxy.net
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+DOMAIN-SUFFIX,msecnd.net
+DOMAIN-SUFFIX,msedge.net
+DOMAIN-SUFFIX,msft.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftauthimages.net
+DOMAIN-SUFFIX,msftidentity.com
+DOMAIN-SUFFIX,msidentity.com
+DOMAIN-SUFFIX,msn.cn
+DOMAIN-SUFFIX,msn.com
+DOMAIN-SUFFIX,msocdn.com
+DOMAIN-SUFFIX,msocsp.com
+DOMAIN-SUFFIX,mstea.ms
+DOMAIN-SUFFIX,o365weve.com
+DOMAIN-SUFFIX,oaspapps.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,officeppe.net
+DOMAIN-SUFFIX,omniroot.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,onenote.net
+DOMAIN-SUFFIX,onestore.ms
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,outlookmobile.com
+DOMAIN-SUFFIX,phonefactor.net
+DOMAIN-SUFFIX,public-trust.com
+DOMAIN-SUFFIX,sfbassets.com
+DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,skypeassets.com
+DOMAIN-SUFFIX,skypeforbusiness.com
+DOMAIN-SUFFIX,staffhub.ms
+DOMAIN-SUFFIX,svc.ms
+DOMAIN-SUFFIX,sway-cdn.com
+DOMAIN-SUFFIX,sway-extensions.com
+DOMAIN-SUFFIX,sway.com
+DOMAIN-SUFFIX,trafficmanager.net
+DOMAIN-SUFFIX,uservoice.com
+DOMAIN-SUFFIX,virtualearth.net
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,windows-ppe.net
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,windowsazure.com
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,wunderlist.com
+DOMAIN-SUFFIX,yammer.com
+DOMAIN-SUFFIX,yammerusercontent.com
+
+# =====  Copilot Core  =====
+DOMAIN,location.microsoft.com
+DOMAIN,odc.officeapps.live.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+
+# =====  Copilot Chat / Bing  =====
+DOMAIN,sydney.bing.com
+DOMAIN,gateway.bingviz.microsoft.net
+DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN-SUFFIX,edgeservices.bing.com
+
+# ===== Third-party dependency (minimum set) =====
+DOMAIN-SUFFIX,algolia.net
+DOMAIN,api.statsig.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+
+# ===== Supplement MSN Resources (Copilot FAQ Pictures and Texts, etc.) =====
+DOMAIN,api.msn.com
+DOMAIN,assets.msn.com
+
+
+# -----------------------
+# Education / Others
+# -----------------------
+# JJC
+DOMAIN-SUFFIX,jjc.edu
+DOMAIN-SUFFIX,stujjc.edu
+DOMAIN,jjc.instructure.com
+
+# Canvas / Instructure
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,instructure.com
+
+# CSUN
+DOMAIN-SUFFIX,csun.edu
+
+# Spokane
+DOMAIN-SUFFIX,spokane.edu
+DOMAIN,scc.spokane.edu
+
+# SF College
+DOMAIN-SUFFIX,sfcollege.edu
+
+# Maricopa edu
+DOMAIN-SUFFIX,maricopa.edu
+
+# Duo MFA
+DOMAIN-SUFFIX,duosecurity.com
+DOMAIN-SUFFIX,duo.com
+
+# Common education auth / identity
+DOMAIN-SUFFIX,login.microsoftonline.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,live.com
+
