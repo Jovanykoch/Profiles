@@ -23,13 +23,13 @@ jobs:
         run: |
           mkdir -p Surge
           curl -sSfL -o Surge/Outbound.conf \
-            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Outbound.conf
+            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Outbound.conf || echo "Warning: Outbound.conf not found" >&2
 
       - name: Download latest Surge Inbound.conf
         run: |
           mkdir -p Surge
           curl -sSfL -o Surge/Inbound.conf \
-            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Inbound.conf
+            https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Inbound.conf || echo "Warning: Inbound.conf not found" >&2
 
       # 可扩展同步 Quantumult、Ruleset、Module 目录等多个目标
 
